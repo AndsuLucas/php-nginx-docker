@@ -1,0 +1,15 @@
+{
+    "name": "andersonlucas/app",
+    "authors": [
+        {
+            "name": "Anderson Lucas",
+            "email": "a.lucassilvadeoliveira@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Render\\": "./render/classes/"
+        }
+    }
+}
