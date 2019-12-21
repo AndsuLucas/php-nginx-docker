@@ -9,7 +9,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Render\\": "./render/classes/"
+            "Render\\": "./render/classes/",
+            "Database\\": "./config/database/"
         }
     }
 }

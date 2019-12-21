@@ -11,12 +11,20 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         array (
             'Render\\' => 7,
         ),
+        'D' => 
+        array (
+            'Database\\' => 9,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Render\\' => 
         array (
             0 => __DIR__ . '/../..' . '/render/classes',
+        ),
+        'Database\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config/database',
         ),
     );
 
