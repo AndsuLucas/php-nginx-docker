@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Render\\' => array($baseDir . '/render/classes'),
+    'Models\\' => array($baseDir . '/models'),
+    'Database\\' => array($baseDir . '/config/database'),
 );
