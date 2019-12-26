@@ -1,14 +1,24 @@
 <?php 
+header('Content-Type: charset=utf-8');
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 use Database\Mysql\MySqlConnection;
-$pdo = new PDO('mysql:host=db-mysql;dbname=myapp', 'vanillaframework', 'password');
+use Models\Classes\Model;
+
 $mysqlConnection = new MySqlConnection(
-    'db-mysql', 'myapp',
+    'mysql', 'myapp',
     'vanillaframework', 'password'    
 );
 
-$connectionInstance = $mysqlConnection->connect();
-var_dump($connectionInstance);
+$model = new Model($mysqlConnection, "person");
+$result1 = $model->update([
+    'full_name' => 'updated', 
+    'age' => 55,
+    'genero' => 0
+], ['id' => 1]);
+var_dump($result1);
+$result = $model->select(['*'], ["id" => 1]);
+var_dump($result);
+
 // use Render\View;
 
 // $view = new View();

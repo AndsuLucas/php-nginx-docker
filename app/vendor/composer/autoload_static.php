@@ -11,6 +11,10 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         array (
             'Render\\' => 7,
         ),
+        'M' => 
+        array (
+            'Models\\' => 7,
+        ),
         'D' => 
         array (
             'Database\\' => 9,
@@ -21,6 +25,10 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         'Render\\' => 
         array (
             0 => __DIR__ . '/../..' . '/render/classes',
+        ),
+        'Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/models',
         ),
         'Database\\' => 
         array (

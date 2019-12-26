@@ -10,7 +10,8 @@
     "autoload": {
         "psr-4": {
             "Render\\": "./render/classes/",
-            "Database\\": "./config/database/"
+            "Database\\": "./config/database/",
+            "Models\\": "./models/"
         }
     }
 }

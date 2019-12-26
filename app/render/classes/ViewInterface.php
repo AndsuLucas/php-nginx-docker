@@ -14,7 +14,7 @@ abstract class ViewInterface
      * @param string $viewName Nome da view adicionando o seu diretório ex: foo.bar .
      * @param string $viewData Dados a serem acessados na view.
      */
-    public function  render(string $viewName, array $viewData = []): void
+    public function render(string $viewName, array $viewData = []): void
     {
         extract($viewData);
         $viewPath = str_replace('.', '/', $viewName);

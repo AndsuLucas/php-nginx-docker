@@ -15,6 +15,10 @@ class  MySqlConnection extends \Database\ConnectionInterface
         $user = $this->user;
         $psswd = $this->psswd;
 
-        return new \PDO($connectionString, $user, $psswd);
+        $pdo = new \PDO($connectionString, $user, $psswd);
+        $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+        $pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
+        
+        return $pdo;
     }
 }
