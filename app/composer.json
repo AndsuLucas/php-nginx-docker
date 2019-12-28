@@ -11,7 +11,8 @@
         "psr-4": {
             "Render\\": "./render/classes/",
             "Database\\": "./config/database/",
-            "Models\\": "./models/"
+            "Models\\": "./models/",
+            "Routes\\": "./route/classes/"
         }
     }
 }
