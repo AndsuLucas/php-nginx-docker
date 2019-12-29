@@ -9,6 +9,7 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
     public static $prefixLengthsPsr4 = array (
         'R' => 
         array (
+            'Routes\\' => 7,
             'Render\\' => 7,
         ),
         'M' => 
@@ -22,6 +23,10 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
     );
 
     public static $prefixDirsPsr4 = array (
+        'Routes\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/route/classes',
+        ),
         'Render\\' => 
         array (
             0 => __DIR__ . '/../..' . '/render/classes',
