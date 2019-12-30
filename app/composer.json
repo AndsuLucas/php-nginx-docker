@@ -12,7 +12,9 @@
             "Render\\": "./render/classes/",
             "Database\\": "./config/database/",
             "Models\\": "./models/",
-            "Routes\\": "./route/classes/"
+            "Routes\\": "./route/classes/",
+            "Http\\": "./http/",
+            "Decorators\\": "./decorators/"
         }
     }
 }

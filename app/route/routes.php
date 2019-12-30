@@ -5,8 +5,6 @@ return [
         'GET' => 'Teste@foo'
     ],
     '/' => [
-        'GET' => function(){
-            echo "oi";
-        }
+        'GET' => 'Foo@bar'
     ]
 ];
