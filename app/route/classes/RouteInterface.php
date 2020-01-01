@@ -1,6 +1,7 @@
 <?php
 
 namespace Routes;
+
 use Http\Info\RequestInterface;
 
 abstract class RouteInterface 
@@ -31,6 +32,7 @@ abstract class RouteInterface
      */
     public function run(): object
     {   
+
         $uri = $this->request->uri;
         $method = $this->request->method;
         $handler = $this->routes[$uri][$method];
@@ -43,5 +45,6 @@ abstract class RouteInterface
         $this->executeHandler($handler);
         return $this;
     }
+
     
 }
