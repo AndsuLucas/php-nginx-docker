@@ -8,5 +8,6 @@ return [
         'GET' => function(){
             echo "oi";
         }
+
     ]
-];
+]

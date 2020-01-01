@@ -4,6 +4,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/bootstrap.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 use Routes\Route;
+use Http\Info\Request;
 
-$route = new Route('Controllers\\', DEFAULT_ROUTING);
+$request = new Request();
+$route = new Route('\\', DEFAULT_ROUTING, $request);
 $route->run()->handleErrors();

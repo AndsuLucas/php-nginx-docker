@@ -16,8 +16,13 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         array (
             'Models\\' => 7,
         ),
+        'H' => 
+        array (
+            'Http\\' => 5,
+        ),
         'D' => 
         array (
+            'Decorators\\' => 11,
             'Database\\' => 9,
         ),
     );
@@ -34,6 +39,14 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         'Models\\' => 
         array (
             0 => __DIR__ . '/../..' . '/models',
+        ),
+        'Http\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/http',
+        ),
+        'Decorators\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/decorators',
         ),
         'Database\\' => 
         array (

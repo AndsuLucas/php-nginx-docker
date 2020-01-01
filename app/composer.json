@@ -12,6 +12,8 @@
             "Render\\": "./render/classes/",
             "Database\\": "./config/database/",
             "Models\\": "./models/",
+            "Http\\": "./http/",
+            "Decorators\\": "./decorators/"
             "Routes\\": "./route/classes/"
         }
     }

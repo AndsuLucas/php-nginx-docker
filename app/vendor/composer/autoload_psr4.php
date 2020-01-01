@@ -9,5 +9,7 @@ return array(
     'Routes\\' => array($baseDir . '/route/classes'),
     'Render\\' => array($baseDir . '/render/classes'),
     'Models\\' => array($baseDir . '/models'),
+    'Http\\' => array($baseDir . '/http'),
+    'Decorators\\' => array($baseDir . '/decorators'),
     'Database\\' => array($baseDir . '/config/database'),
 );
