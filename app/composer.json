@@ -13,8 +13,10 @@
             "Database\\": "./config/database/",
             "Models\\": "./models/",
             "Http\\": "./http/",
-            "Decorators\\": "./decorators/"
-            "Routes\\": "./route/classes/"
+            "Decorators\\": "./decorators/",
+            "Controller\\": "./controller/" ,
+            "Middlewares\\": "./config/middlewares/Classes/"
+
         }
     }
 }

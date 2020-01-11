@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Seja bem vindo <?= $user['name']?></h1>
-    <hr>
-    <p>Sua cor preferia é <?= $user['favorite_color'] ?></p>
+    <form action="/test" method="post">
+        <input type="text" name="email">
+        <input type="date" name="birthday">
+        <input type="submit" value="ok">
+    </form>
 </body>
 </html>

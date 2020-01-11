@@ -15,6 +15,7 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         'M' => 
         array (
             'Models\\' => 7,
+            'Middlewares\\' => 12,
         ),
         'H' => 
         array (
@@ -24,6 +25,10 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         array (
             'Decorators\\' => 11,
             'Database\\' => 9,
+        ),
+        'C' => 
+        array (
+            'Controller\\' => 11,
         ),
     );
 
@@ -40,6 +45,10 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         array (
             0 => __DIR__ . '/../..' . '/models',
         ),
+        'Middlewares\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config/middlewares/Classes',
+        ),
         'Http\\' => 
         array (
             0 => __DIR__ . '/../..' . '/http',
@@ -51,6 +60,10 @@ class ComposerStaticInit6c83b771f03ca31dcc1fd5af7b7f97e7
         'Database\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config/database',
+        ),
+        'Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/controller',
         ),
     );
 
