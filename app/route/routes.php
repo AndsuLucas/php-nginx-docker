@@ -10,4 +10,4 @@ return [
     '/test' => [
         'POST' => 'Foo@test'
     ]
-];
+]

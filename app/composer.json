@@ -12,11 +12,11 @@
             "Render\\": "./render/classes/",
             "Database\\": "./config/database/",
             "Models\\": "./models/",
-            "Routes\\": "./route/classes/",
             "Http\\": "./http/",
             "Decorators\\": "./decorators/",
             "Controller\\": "./controller/" ,
             "Middlewares\\": "./config/middlewares/Classes/"
+
         }
     }
 }
