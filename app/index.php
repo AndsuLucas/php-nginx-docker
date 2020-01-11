@@ -6,14 +6,38 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 use Routes\Route;
 use Http\Info\Request;
 use Http\Info\RequestInterface;
+use Render\View;
+use Controller\Classes\ControllerInterface;
+$rand = mt_rand();
 
-class Foo {
-    public function bar(RequestInterface $request)
+var_dump(sha1(uniqid((string)mt_rand(), true)));
+die();
+class Foo extends ControllerInterface
+{
+    
+    use Decorators\DataManager\Validator;
+    public function __construct()
     {
-        var_dump($request->uri);
-        var_dump($request->method);
-        var_dump($request->data);
-        echo "hello world";
+        $this->middleware = [
+            'users' => 'all'
+        ];
+        $this->loadRules('rules', 'user');   
+    }
+    
+    public function bar(RequestInterface $request)
+    {   
+        $view = new View();
+        $view->render('index');
+    }
+
+    public function test(RequestInterface $request)
+    {      
+
+        $this->applyValidation($request->data)
+        ->ifFailDo(function(){
+            die('fail');
+        });
+       
     }
 }
 

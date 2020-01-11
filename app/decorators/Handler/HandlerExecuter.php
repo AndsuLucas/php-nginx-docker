@@ -4,6 +4,7 @@ namespace Decorators\Handler;
 
 trait HandlerExecuter
 {
+
     /**
      * Caso não seja um callback, utilizamos esse método para capturar
      * o objeto e seu método.
@@ -36,6 +37,7 @@ trait HandlerExecuter
         }
         
         $classHandler = $this->getClassHandler((string)$handler, $namespace);
+        $this->runMiddleware($classHandler, $this->request);
         call_user_func_array(
             [   
                 &$classHandler['class'],
@@ -45,5 +47,17 @@ trait HandlerExecuter
             [$this->request]
         );
         return $this;
+    }
+
+    /**
+     * Executa os middlewares de determinado controller.
+     * @param array $classHandler Dados do controller
+     * @param \Http\Info\RequestInterface $request Requisição
+     * @return void
+     */
+    protected function runMiddleware(array $classHandler, \Http\Info\RequestInterface $request): void
+    {   
+        $methodName = $classHandler['method'];
+        $classHandler['class']->runMiddleware($methodName, $request);
     }
 }

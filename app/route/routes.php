@@ -6,5 +6,8 @@ return [
     ],
     '/' => [
         'GET' => 'Foo@bar'
+    ],
+    '/test' => [
+        'POST' => 'Foo@test'
     ]
 ];

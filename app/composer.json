@@ -14,7 +14,9 @@
             "Models\\": "./models/",
             "Routes\\": "./route/classes/",
             "Http\\": "./http/",
-            "Decorators\\": "./decorators/"
+            "Decorators\\": "./decorators/",
+            "Controller\\": "./controller/" ,
+            "Middlewares\\": "./config/middlewares/Classes/"
         }
     }
 }

@@ -12,14 +12,17 @@ class Request implements RequestInterface
     public function __construct()
     {
         $this->uri = $this->getUri();       
-        $this->data = $this->getRequestData();
         $this->method = $_SERVER['REQUEST_METHOD'];
+        $this->data = $this->getRequestData();
     }
 
+    /**
+     * Pega os dados da request
+     * @return array
+     */
     private function getRequestData(): array
     {
-        $request['data'] = $this->method == 'POST' ? $_POST : $_GET;
-        return $request;
+        return $this->method == 'POST' ? $_POST : $_GET;
     }
 
     /**
